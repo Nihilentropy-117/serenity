@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SERENity API Web Access</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-bottom: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SERENity API Web Access</h1>
+        <div class="row">
+            <div class="form-group col">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username">
+            </div>
+            <div class="form-group col">
+                <label for="token">Token</label>
+                <input type="text" class="form-control" id="token">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col">
+                <label for="mode">Mode</label>
+                <select class="form-control" id="mode"></select>
+            </div>
+            <div class="form-group col">
+                <label for="modifier">Modifier</label>
+                <select class="form-control" id="modifier"></select>
+            </div>
+            <div class="form-group col">
+                <label for="command">Command</label>
+                <select class="form-control" id="command"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+	<div class="text-center my-4" id="buttons">
+	    <button class="btn btn-primary mx-2" id="submit">Submit</button>
+	    <button class="btn btn-secondary mx-2" id="clear">Clear</button>
+	    <button class="btn btn-info mx-2" id="copyUp">Copy Up</button>
+	</div>
+
+        <div class="form-group">
+            <textarea class="form-control" id="response" rows="10"></textarea>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
